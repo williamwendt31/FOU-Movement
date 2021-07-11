@@ -1,22 +1,26 @@
-<mat-toolbar>
-  <a class="remove-styling black-font" href="/">F.O.U Movement</a>
-  <span class="spacer"></span>
-  <a fxHide.lt-sm mat-button href="/events">Events</a>
-  <a fxHide.lt-sm mat-button href="/about-us">Our Brothers</a>
-  <a fxHide.lt-sm mat-button href="/contact-us">Contact Us</a>
-  <button fxHide.gt-sm mat-icon-button>
-    <mat-icon>menu</mat-icon>
-  </button>
-</mat-toolbar>
-<div class="background">
-  <div fxFlex fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-around center">
-    <img class="logo" src="../assets/logos/foublk.PNG" />
-    <h2>
-        "We are hard pressed on every side, but not crushed;<br /> 
-        perplexed, but not in despair; persecuted, but not abandoned;<br /> 
-        struck down, but not destroyed."<br />
-        - 2 Corinthians 4:8-9
-    </h2>
+<div class="top-portion">
+  <mat-toolbar>
+    <a class="remove-styling white-font" href="/">F.O.U Movement</a>
+    <span class="spacer"></span>
+    <a fxHide.lt-sm mat-button href="/events">Events</a>
+    <a fxHide.lt-sm mat-button href="/about-us">Our Brothers</a>
+    <a fxHide.lt-sm mat-button href="/contact-us">Contact Us</a>
+    <button fxHide.gt-sm mat-icon-button>
+      <mat-icon>menu</mat-icon>
+    </button>
+  </mat-toolbar>
+  <div class="background">
+    <div fxFlex fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-around center">
+      <img class="logo" src="../assets/logos/foublk.PNG" />
+      <h2 class="white-font" fxHide.lt-md>
+          "We are hard pressed on every side, but not crushed;<br /> 
+          perplexed, but not in despair; persecuted, but not abandoned;<br /> 
+          struck down, but not destroyed."<br />
+          - 2 Corinthians 4:8-9
+      </h2>
+    </div>
   </div>
 </div>
-<router-outlet></router-outlet>
+<div class="main-body">
+  <router-outlet></router-outlet>
+</div>

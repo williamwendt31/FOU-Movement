@@ -1,6 +1,6 @@
 mat-toolbar {
-    background-color: white;
-    color: black;
+    background-color: transparent;
+    color: white;
 }
 
 .logo {
@@ -13,3 +13,12 @@ mat-toolbar {
 .background {
     text-align: center;
 }
+
+.top-portion {
+    background-image: url('../assets/logos/background.jpg');
+    background-size: auto;
+}
+
+// .main-body {
+//     padding: 0 100px;
+// }
