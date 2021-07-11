@@ -9,6 +9,33 @@ body {
     font-family: 'Montserrat', sans-serif !important;
 }
 
+h1 {
+    font-size: 5.9vw !important;
+}
+h2 {
+    font-size: 3.0vh !important;
+}
+p {
+    font-size: 2vmin !important;
+}
+
 * {
     font-family: 'Montserrat', sans-serif;
+}
+
+.white-font {
+    color: white;
+}
+
+.black-font {
+    color: black;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.remove-styling {
+    font-style: normal;
+    text-decoration: none;
 }

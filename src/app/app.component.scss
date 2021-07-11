@@ -3,19 +3,13 @@ mat-toolbar {
     color: black;
 }
 
-.white-font {
-    color: white;
+.logo {
+    width: 55%;
+    max-width: 350px;
+    height: auto;
+    padding: 20px 0;
 }
 
-.black-font {
-    color: black;
-}
-
-.spacer {
-    flex: 1 1 auto;
-}
-
-.normal-link {
-    font-style: normal;
-    text-decoration: none;
+.background {
+    text-align: center;
 }
