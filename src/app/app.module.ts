@@ -13,7 +13,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
-
+import { MatDialogModule } from '@angular/material/dialog';
+import { DonationFormComponent } from './donation-form/donation-form.component';
+import { MatMenuModule } from '@angular/material/menu';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     AboutUsComponent,
     ContactUsComponent,
     PageNotFoundComponent,
-    HomeComponent
+    HomeComponent,
+    DonationFormComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatDialogModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

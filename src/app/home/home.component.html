@@ -1,61 +1,66 @@
-<div>
-    <div fxFlex fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center stretch" fxLayoutGap="40px">
-        <div fxFlex.gt-md="15"></div>
-        <div fxFlex="50" class="left-side">
-            <div class="statement">
-                <h2 class="title">Our Mission</h2>
-                <p>
-                    F.O.U Movement. The Gathering of Brothers bringing light to the darkness we once
-                    lived in. Restoring Hope to our communities and Empowering each other
-                    by Educating the youth against hate and providing resources for addicts
-                    and former inmates.
-                </p>
-            </div>
-            <div class="statement">
-                <h2 class="title">Background</h2>
-                <p>
-                    The founders of the organization are Valentino Vaafatu Luafalemana,
-                    Ulisese Viliamu, and Peter Afemata. All of whom remain engaged in
-                    their communities and seek to provide mentorship and guidance
-                    to wayward youth, persons recovering from substance abuse, and former
-                    inmates working toward reintegration into society. F.O.U Movement strives to develop
-                    and implement community outreach programs to combat hate crimes against perons who
-                    identify as Asian American - Pacific Islander. F.O.U movement also plans to develop and establish
-                    a network of halfway houses that will facilitate the recovery of persons struggling
-                    with substance abuse as well as the reintegration of former inmates while providing
-                    resources and support to mitigate recidivism.
-                </p>
-            </div>
-            <!-- <div class="statement">
-                <h2 class="title">Sponsored Programs</h2>
-                <p>
-                    <span class="program">Protect AAPI:</span> The Protect AAPI outreach program is designed to promote awareness and
-                        mitigate violence against AAPI persons by providing education and resources to affected
-                        communities, as well as through partnership with other nonprofit organizations working 
-                        to combat violence against AAPI communities.<br/><br/>
-                    <span class="program">Halfway Home:</span> The Halfway Home project will oversee the development 
-                        and establishment of a network of halfway houses to facilitate the rehabilitation of persons recovering from 
-                        substance abuse and support the reintegration of former inmates into society.<br/><br/>
-                    <span class="program">Restore Hope:</span> The Restore Hope program will provide 
-                        educational opportunities, resources, support, and alternative extracurricular activities to steer 
-                        AAPI youth and other at-risk youth away from gang activity and gang violence in their respective communities.
-                </p>
-            </div> -->
-        </div>
-        <div fxFlex="20" fxclass="right-side" fxFlex.lt-md="0">
-            <p>
-                The founders of the organization are Valentino Vaafatu Luafalemana,
-                Ulisese Viliamu, and Peter Afemata. All of whom remain engaged in
-                their communities and seek to provide mentorship and guidance
-                to wayward youth, persons recovering from substance abuse, and former
-                inmates working toward reintegration into society. F.O.U Movement strives to develop
-                and implement community outreach programs to combat hate crimes against perons who
-                identify as Asian American - Pacific Islander. F.O.U movement also plans to develop and establish
-                a network of halfway houses that will facilitate the recovery of persons struggling
-                with substance abuse as well as the reintegration of former inmates while providing
-                resources and support to mitigate recidivism.
-            </p>
-        </div>
-        <div fxFlex.gt-md="15"></div>
+<div [ngClass.lt-md]="'left-right-padding'" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center stretch" fxLayoutGap.gt-md="60px">
+    <div fxFlex.gt-md="15"></div>
+    <div fxFlex="50" class="left-side">
+        <h2 class="title">Our Mission</h2>
+        <p>
+            F.O.U Movement. The Gathering of Brothers bringing light to the darkness we once
+            lived in. Restoring Hope to our communities and Empowering each other
+            by Educating the youth against hate and providing resources for addicts
+            and former inmates.
+        </p>
+        <h2 class="title">Background</h2>
+        <p>
+            The founders of the organization are Valentino Vaafatu Luafalemana,
+            Ulisese Viliamu, and Peter Afemata. All of whom remain engaged in
+            their communities and seek to provide mentorship and guidance
+            to wayward youth, persons recovering from substance abuse, and former
+            inmates working toward reintegration into society. F.O.U Movement strives to develop
+            and implement community outreach programs to combat hate crimes against perons who
+            identify as Asian American - Pacific Islander. F.O.U movement also plans to develop and establish
+            a network of halfway houses that will facilitate the recovery of persons struggling
+            with substance abuse as well as the reintegration of former inmates while providing
+            resources and support to mitigate recidivism.
+        </p>
+        <h2 class="title">Sponsored Programs</h2>
+        <p>
+            Protect AAPI: The Protect AAPI outreach program is designed to promote awareness and
+            mitigate violence against AAPI persons by providing education and resources to affected
+            communities, as well as through partnership with other nonprofit organizations working
+            to combat violence against AAPI communities.<br/><br/>
+            Halfway Home: The Halfway Home project will oversee the development
+            and establishment of a network of halfway houses to facilitate the rehabilitation of persons recovering from
+            substance abuse and support the reintegration of former inmates into society.<br/><br/>
+            Restore Hope: The Restore Hope program will provide
+            educational opportunities, resources, support, and alternative extracurricular activities to steer
+            AAPI youth and other at-risk youth away from gang activity and gang violence in their respective communities.
+        </p>
     </div>
+    <div fxFlex="20" class="right-side">
+        <div fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="20px">
+            <div class="inner-box">
+                <h2>Get Involved</h2>
+                <mat-icon class="material-icons-font large-icon">event</mat-icon>
+                <h3 style="margin-top: 5px;">
+                    1st Friday of Every Month<br/>
+                    6-8 p.m.
+                </h3>
+            </div>
+            <div class="inner-box">
+                <h2>Contact Us</h2>
+                <h3 style="line-height: 150%;">
+                    foumovement@gmail.com<br/>
+                    (562) 316 9759
+                </h3>
+            </div>
+            <div class="inner-box">
+                <h2>Follow Us</h2>
+                <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px">
+                    <button mat-button>
+                        <mat-icon class="material-icons-font large-icon">facebook</mat-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div fxFlex.gt-md="15"></div>
 </div>

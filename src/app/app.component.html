@@ -2,15 +2,28 @@
   <mat-toolbar>
     <a class="remove-styling white-font" href="/">F.O.U Movement</a>
     <span class="spacer"></span>
-    <a fxHide.lt-sm mat-button href="/events">Events</a>
     <a fxHide.lt-sm mat-button href="/about-us">Our Brothers</a>
-    <a fxHide.lt-sm mat-button href="/contact-us">Contact Us</a>
-    <button fxHide.gt-sm mat-icon-button>
+    <button fxHide.lt-sm mat-button class="donate-button" (click)="openDialog()">
+      <img src="https://donorbox.org/images/red_logo.png" />
+      <span style="margin-left: 10px;">Donate</span>
+    </button>
+    <button fxHide fxShow.lt-sm mat-icon-button [matMenuTriggerFor]="menu">
       <mat-icon>menu</mat-icon>
     </button>
+    <mat-menu #menu="matMenu">
+      <a href="/about-us" class="remove-styling">
+        <button mat-menu-item>
+          Our Brothers
+        </button>
+      </a>
+      <button mat-button class="donate-button" style="vertical-align: middle;" (click)="openDialog()">
+        <img src="https://donorbox.org/images/red_logo.png" />
+        <span style="margin-left: 10px;">Donate</span>
+      </button>
+    </mat-menu>
   </mat-toolbar>
   <div class="background">
-    <div fxFlex fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-around center">
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-around center">
       <img class="logo" src="../assets/logos/foublk.PNG" />
       <h2 class="white-font" fxHide.lt-md>
           "We are hard pressed on every side, but not crushed;<br /> 
