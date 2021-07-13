@@ -1,1 +1,14 @@
-<p>about-us works!</p>
+<div class="about">
+    <h2 class="title">Our Brothers & Their Stories</h2>
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutAlign="center center">
+        <div fxFlex.gt-md="15"></div>
+        <img fxFlex="20" [src]="currentImagePath" class="current-image-source" />
+        <app-founder-background fxFlex="50" [founderObject]="currentFounder"></app-founder-background>
+        <div fxFlex.gt-md="15"></div>
+    </div>
+    <div fxLayout="row wrap" fxLayoutGap="10px" fxLayoutAlign="center center">
+        <div *ngFor="let founder of founders">
+            <app-founder-picture [founderObject]="founder" (onFounderSelected)="handleFounderSelection($event)"></app-founder-picture>
+        </div>
+    </div>
+</div>

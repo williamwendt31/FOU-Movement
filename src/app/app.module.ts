@@ -16,6 +16,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatDialogModule } from '@angular/material/dialog';
 import { DonationFormComponent } from './donation-form/donation-form.component';
 import { MatMenuModule } from '@angular/material/menu';
+import { FounderBackgroundComponent } from './ui-components/founder-background/founder-background.component';
+import { FounderPictureComponent } from './ui-components/founder-picture/founder-picture.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,9 @@ import { MatMenuModule } from '@angular/material/menu';
     ContactUsComponent,
     PageNotFoundComponent,
     HomeComponent,
-    DonationFormComponent
+    DonationFormComponent,
+    FounderBackgroundComponent,
+    FounderPictureComponent
   ],
   imports: [
     BrowserModule,

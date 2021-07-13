@@ -1,0 +1,26 @@
+.founder-picture {
+    max-height: 30px !important;
+    max-width: 30px !important;
+}
+
+.title {
+    margin-top: 60px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.current-image-source {
+    height: 300px;
+    width: 300px;
+    display: block;
+    object-fit: contain;
+    margin-left: 200px;
+    margin-bottom: 10px;
+}
+
+.side {
+    align-content: center;
+    height: 100%;
+    width: 50%;
+    display: inline-block;
+}
