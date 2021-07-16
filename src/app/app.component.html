@@ -37,3 +37,14 @@
 <div class="main-body">
   <router-outlet></router-outlet>
 </div>
+<footer style="background-color: black; padding: 20px 0;">
+  <span class="white-font" style="display: block; text-align: center; margin-bottom: 20px;">@ 2020-2021 Fa'atasiga O' Uso's. All Rights Reserved.</span>
+  <div flexLayout="row" fxLayoutAlign="center center" fxLayoutGap="40px">
+    <button mat-button class="donate-button" style="vertical-align: middle;" (click)="openDialog()">
+      <img src="https://donorbox.org/images/red_logo.png" />
+    </button>
+    <a class="remove-styling white-font" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/faatasigao.usos">
+      <span class="material-icons-font large-icon">facebook</span>
+  </a>
+  </div>
+</footer>

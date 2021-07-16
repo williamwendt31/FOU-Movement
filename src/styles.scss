@@ -20,7 +20,7 @@ h3 {
     font-size: 2.0vh !important;
 }
 p {
-    font-size: 2vmin !important;
+    font-size: 2.25vmin !important;
     line-height: 150%;
 }
 
@@ -66,6 +66,14 @@ p {
     font-weight: 900;
 }
 
+.italic {
+    font-style: italic;
+}
+
 .material-icons-font {
     font-family: 'Material Icons';
+}
+
+.left-right-padding {
+    padding: 0 40px;
 }

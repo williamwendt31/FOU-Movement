@@ -1,14 +1,43 @@
-<div class="about">
-    <h2 class="title">Our Brothers & Their Stories</h2>
-    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutAlign="center center">
-        <div fxFlex.gt-md="15"></div>
-        <img fxFlex="20" [src]="currentImagePath" class="current-image-source" />
-        <app-founder-background fxFlex="50" [founderObject]="currentFounder"></app-founder-background>
-        <div fxFlex.gt-md="15"></div>
-    </div>
-    <div fxLayout="row wrap" fxLayoutGap="10px" fxLayoutAlign="center center">
-        <div *ngFor="let founder of founders">
-            <app-founder-picture [founderObject]="founder" (onFounderSelected)="handleFounderSelection($event)"></app-founder-picture>
+<div [ngClass.lt-md]="'left-right-padding'" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center stretch" fxLayoutGap.gt-md="60px">
+    <div fxFlex.gt-md="15"></div>
+    <div fxFlex="50" class="left-side">
+        <h2 class="title">Our Brothers & Their Stories</h2>
+        <div style="margin-bottom: 20px;" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="40px" fxLayoutAlign="center stretch">
+            <img fxFlex="30" [src]="currentImagePath" class="current-image-source" />
+            <app-founder-background fxFlex="70" [founderObject]="currentFounder"></app-founder-background>
+        </div>
+        <div fxLayout="row wrap" fxLayoutGap="10px" fxLayoutAlign="center center">
+            <div *ngFor="let founder of founders">
+                <app-founder-picture [founderObject]="founder" (onFounderSelected)="handleFounderSelection($event)"></app-founder-picture>
+            </div>
         </div>
     </div>
+    <div fxFlex="20" class="right-side">
+        <div fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="20px">
+            <div class="inner-box">
+                <h2>Get Involved</h2>
+                <mat-icon class="material-icons-font large-icon">event</mat-icon>
+                <h3 style="margin-top: 5px;">
+                    1st Friday of Every Month<br/>
+                    6-8 p.m.
+                </h3>
+            </div>
+            <div class="inner-box">
+                <h2>Contact Us</h2>
+                <h3 style="line-height: 150%;">
+                    foumovement@gmail.com<br/>
+                    (562) 316 9759
+                </h3>
+            </div>
+            <div class="inner-box">
+                <h2>Follow Us</h2>
+                <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px">
+                    <a class="remove-styling white-font" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/faatasigao.usos">
+                        <span class="material-icons-font large-icon">facebook</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div fxFlex.gt-md="15"></div>
 </div>

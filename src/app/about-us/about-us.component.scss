@@ -1,20 +1,24 @@
+@import '../../styles.scss';
+@import '../app.component.scss';
+@import '../home/home.component.scss';
+
 .founder-picture {
     max-height: 30px !important;
     max-width: 30px !important;
 }
 
 .title {
-    margin-top: 60px;
-    margin-bottom: 70px;
+    // margin-top: 60px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
 .current-image-source {
-    height: 300px;
-    width: 300px;
+    width: 100%;
+    height: auto;
     display: block;
-    object-fit: contain;
-    margin-left: 200px;
+    object-fit:fill;
+    // margin-left: 200px;
     margin-bottom: 10px;
 }
 
