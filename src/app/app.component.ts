@@ -10,7 +10,7 @@ import { DonationFormComponent } from './donation-form/donation-form.component';
 export class AppComponent {
   constructor(public dialog: MatDialog) {}
 
-  openDialog(): void {
+  onDonationClick(): void {
     const dialogRef = this.dialog.open(DonationFormComponent);
     dialogRef.afterClosed().subscribe(result => {
       console.log('Successfully Closed Dialog');

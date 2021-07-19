@@ -3,12 +3,12 @@
     <a class="remove-styling white-font" href="/">F.O.U Movement</a>
     <span class="spacer"></span>
     <a fxHide.lt-sm mat-button href="/about-us">Our Brothers</a>
-    <button fxHide.lt-sm mat-button class="donate-button" (click)="openDialog()">
+    <button fxHide.lt-sm mat-button class="donate-button" (click)="onDonationClick()">
       <img src="https://donorbox.org/images/red_logo.png" />
       <span style="margin-left: 10px;">Donate</span>
     </button>
     <button fxHide fxShow.lt-sm mat-icon-button [matMenuTriggerFor]="menu">
-      <mat-icon>menu</mat-icon>
+      <mat-icon class="material-icons-font">menu</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
       <a href="/about-us" class="remove-styling">
@@ -16,7 +16,7 @@
           Our Brothers
         </button>
       </a>
-      <button mat-button class="donate-button" style="vertical-align: middle;" (click)="openDialog()">
+      <button mat-button class="donate-button" style="vertical-align: middle;" (click)="onDonationClick()">
         <img src="https://donorbox.org/images/red_logo.png" />
         <span style="margin-left: 10px;">Donate</span>
       </button>
@@ -38,13 +38,16 @@
   <router-outlet></router-outlet>
 </div>
 <footer style="background-color: black; padding: 20px 0;">
-  <span class="white-font" style="display: block; text-align: center; margin-bottom: 20px;">@ 2020-2021 Fa'atasiga O' Uso's. All Rights Reserved.</span>
   <div flexLayout="row" fxLayoutAlign="center center" fxLayoutGap="40px">
-    <button mat-button class="donate-button" style="vertical-align: middle;" (click)="openDialog()">
+    <button class="remove-button-styling" style="vertical-align: middle;" (click)="onDonationClick()">
       <img src="https://donorbox.org/images/red_logo.png" />
+    </button>
+    <button class="remove-button-styling" style="vertical-align: middle;">
+      <img src="../assets/logos/instagram-24.png" />
     </button>
     <a class="remove-styling white-font" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/faatasigao.usos">
       <span class="material-icons-font large-icon">facebook</span>
-  </a>
+    </a>
   </div>
+  <span class="white-font" style="display: block; text-align: center; margin-top: 20px;">@ 2020-2021 Fa'atasiga O' Uso's. All Rights Reserved.</span>
 </footer>

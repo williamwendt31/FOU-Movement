@@ -16,11 +16,13 @@ h1 {
 h2 {
     font-size: 2.5vh !important;
 }
+
 h3 {
     font-size: 2.0vh !important;
 }
+
 p {
-    font-size: 2.25vmin !important;
+    font-size: 2vmin !important;
     line-height: 150%;
 }
 
@@ -46,7 +48,7 @@ p {
 }
 
 .large-icon {
-    font-size: 35px;
+    font-size: 32px;
     // color: #3b5998;
 }
 
@@ -76,4 +78,16 @@ p {
 
 .left-right-padding {
     padding: 0 40px;
+}
+
+.remove-button-styling {
+    background: none;
+    border: none;
+}
+
+@media only screen and (max-width: 768px) {
+    p {
+        font-size: 3vmin !important;
+        line-height: 150%;
+    }
 }

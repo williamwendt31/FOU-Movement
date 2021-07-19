@@ -16,8 +16,9 @@
 .current-image-source {
     width: 100%;
     height: auto;
+    max-height: 300px !important;
     display: block;
-    object-fit:fill;
+    object-fit: contain;
     // margin-left: 200px;
     margin-bottom: 10px;
 }
@@ -27,4 +28,8 @@
     height: 100%;
     width: 50%;
     display: inline-block;
+}
+
+.extra-padding {
+    padding: 0 100px;
 }
